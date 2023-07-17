@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+html {
+    --cor-cards: hsla(139, 42%, 13%, 0.274);
+    --cor-texto: #ffff;
+    --cor-titulo-aside: white;
+    --cor-link: #00882b;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("/imagens/488f0f4e-90dc-4206-b8fe-39c424665ada.jpg");
+    background-size: auto;
+    min-height: 100%;
+}
+
+.container-principal {/*pagina principal*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FFFFFF;
+    max-height: 100vh;
+}
+
+aside {/* lado esquerdo da pagina*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 18%;
+    background-image: linear-gradient(#001FB8, #000);
+    align-items: center;
+    border: 5px solid #000
+}
+img.minha-foto {
+    margin: 5%;
+    width: 80%;
+    display: inline-block;
+    border-radius: 50%;
+}
+h2.meu-nome {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #FFFFFF;
+    font-size: 3dvh;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5% 0;
+    text-align: center;
+}
+ul.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+aside h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    max-width: 75%;
+    font-size: 2.5dvh;
+    color: #FFFFFF;
+    margin: 25px 0px 15px 0px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+i {
+    margin: 5px;
+}
+
+li.itens {
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 4px;
+    font-size: 3dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 0 0.5%;
+    min-height: 100vh;
+    gap: 10px;
+}
+main h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 4.2dvh;
+    margin-bottom: 16px;
+}
+main p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 2.2dvh;
+}
+.sobre-mim,
+.minha-jornada,
+.network {
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.sobre-mim,
+.minha-jornada {
+    height: 30%;
+    min-height: max-content;
+    justify-content: center;
+}
+.network {
+    min-height: 40%;
+}
+
+.sobre-mim ul {
+    font-family: 'Roboto Slab', sans-serif;
+    list-style-type: none;
+    padding: 0.5%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.sobre-mim ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.sobre-mim ul a:hover {
+    text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    height: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    font-family: 'Roboto Slab', sans-serif;
+    width: 13vw;
+    height: 25vh;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100%;
+    text-align: center;
+    border-radius: 28px 28px 0 0;
+    padding: 5px;
+}
+.card img {
+    width: 60%;
+}
+
+.card a {
+    font-family: 'Roboto Slab', sans-serif;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+
+.botao-whatsapp {
+    font-family: 'Roboto Slab', sans-serif;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 2px #888;
+}
+
+@media screen and (max-width: 1023px){
+    .container-principal {
+        flex-direction: column;
+    }
+    aside {
+        width: 100vw;
+        max-width: none;
+        min-height: max-content;
+        border: 0;
+        display: flex;
+    }
+    img.minha-foto{
+        width: 30%;
+    }
+    h2.meu-nome {
+        background-color:#000;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+    }
+    ul.aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    aside h3 {
+        font-family: 'Roboto Slab', sans-serif;
+        max-width: 75%;
+        margin: 25px 0px 15px 0px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        background-color:#000;
+    }
+
+    li.itens {
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    li.itens a {
+        transition: 0.3s;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    li.itens a:link,
+    li.itens a:visited {
+        text-decoration: none;
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    li.itens a:hover {
+        background-color:#FFFFFF;
+    }
+    
+    main {
+        width: 100%;
+        padding: 0 0 0 0;
+        min-height: max-content;
+        gap: 0px;
+    }
+    .sobre-mim,
+    .minha-jornada,
+    .network {
+        border: #FFFFFF solid 0px;
+    }
+    .sobre-mim ul {
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    .network {
+        min-height: none;
+    }
+    main h2 {
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    main p {
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    .card {
+        width: 80vw;
+        height: 32vh;
+        border: #FFFFFF solid 5px;
+    }
+    .card img {
+        width: 30dvw;
+        max-width: fit-content;
+        max-height: 18vh;
+        justify-self: end;
+    }
+    .card h3 {
+        font-family: 'Roboto Slab', sans-serif;
+    }
+
+    .card a {
+        font-family: 'Roboto Slab', sans-serif;
+    }
+}
