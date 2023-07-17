@@ -5,16 +5,8 @@
     font-family: 'Roboto Slab', sans-serif;
 }
 
-html {
-    --cor-cards: hsla(139, 42%, 13%, 0.274);
-    --cor-texto: #ffff;
-    --cor-titulo-aside: white;
-    --cor-link: #00882b;
-    overflow-x: hidden;
-}
-
 body {
-    background-image: url("./imagens/488f0f4e-90dc-4206-b8fe-39c424665ada.jpg");
+    background-image: url("../imagens/488f0f4e-90dc-4206-b8fe-39c424665ada.jpg");
     background-size: auto;
     min-height: 100%;
 }
@@ -147,6 +139,7 @@ main p {
     border-radius: 20px;
     justify-content: space-between;
     align-items: center;
+    background-color: #090033;
 
 }
 .card h3 {
